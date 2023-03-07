@@ -1,0 +1,50 @@
+set(CELT_SOURCES
+	"${OPUS_DIR}/celt/bands.c"
+	"${OPUS_DIR}/celt/celt.c"
+	"${OPUS_DIR}/celt/celt_encoder.c"
+	"${OPUS_DIR}/celt/celt_decoder.c"
+	"${OPUS_DIR}/celt/cwrs.c"
+	"${OPUS_DIR}/celt/entcode.c"
+	"${OPUS_DIR}/celt/entdec.c"
+	"${OPUS_DIR}/celt/entenc.c"
+	"${OPUS_DIR}/celt/kiss_fft.c"
+	"${OPUS_DIR}/celt/laplace.c"
+	"${OPUS_DIR}/celt/mathops.c"
+	"${OPUS_DIR}/celt/mdct.c"
+	"${OPUS_DIR}/celt/modes.c"
+	"${OPUS_DIR}/celt/pitch.c"
+	"${OPUS_DIR}/celt/celt_lpc.c"
+	"${OPUS_DIR}/celt/quant_bands.c"
+	"${OPUS_DIR}/celt/rate.c"
+	"${OPUS_DIR}/celt/vq.c")
+
+set(CELT_SOURCES_SSE
+	"${OPUS_DIR}/celt/x86/x86cpu.c"
+	"${OPUS_DIR}/celt/x86/x86_celt_map.c"
+	"${OPUS_DIR}/celt/x86/pitch_sse.c")
+
+set(CELT_SOURCES_SSE2
+	"${OPUS_DIR}/celt/x86/pitch_sse2.c"
+	"${OPUS_DIR}/celt/x86/vq_sse2.c")
+
+set(CELT_SOURCES_SSE4_1
+	"${OPUS_DIR}/celt/x86/celt_lpc_sse4_1.c"
+	"${OPUS_DIR}/celt/x86/pitch_sse4_1.c")
+
+set(CELT_SOURCES_ARM
+	"${OPUS_DIR}/celt/arm/armcpu.c"
+	"${OPUS_DIR}/celt/arm/arm_celt_map.c")
+
+set(CELT_SOURCES_ARM_ASM
+	"${OPUS_DIR}/celt/arm/celt_pitch_xcorr_arm.s")
+
+set(CELT_AM_SOURCES_ARM_ASM
+	"${OPUS_DIR}/celt/arm/armopts.s.in")
+
+set(CELT_SOURCES_ARM_NEON_INTR
+	"${OPUS_DIR}/celt/arm/celt_neon_intr.c"
+	"${OPUS_DIR}/celt/arm/pitch_neon_intr.c")
+
+set(CELT_SOURCES_ARM_NE10
+	"${OPUS_DIR}/celt/arm/celt_fft_ne10.c"
+	"${OPUS_DIR}/celt/arm/celt_mdct_ne10.c")

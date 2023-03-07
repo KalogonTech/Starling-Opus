@@ -1,0 +1,13 @@
+set(OPUS_PRIV_INCLUDES
+	"${OPUS_DIR}/celt/"
+	"${OPUS_DIR}/celt/arm"
+	"${OPUS_DIR}/celt/mips"
+	"${OPUS_DIR}/celt/x86"
+	"${OPUS_DIR}/silk"
+	"${OPUS_DIR}/silk/arm"
+	"${OPUS_DIR}/silk/fixed"
+	"${OPUS_DIR}/silk/float"
+	"${OPUS_DIR}/silk/mips"
+	"${OPUS_DIR}/silk/x86"
+    "${OPUS_DIR}/src/"
+)

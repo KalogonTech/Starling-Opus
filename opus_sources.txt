@@ -1,0 +1,16 @@
+set(OPUS_SOURCES
+	"${OPUS_DIR}/src/opus.c"
+	"${OPUS_DIR}/src/opus_decoder.c"
+	"${OPUS_DIR}/src/opus_encoder.c"
+	"${OPUS_DIR}/src/opus_multistream.c"
+	"${OPUS_DIR}/src/opus_multistream_encoder.c"
+	"${OPUS_DIR}/src/opus_multistream_decoder.c"
+	"${OPUS_DIR}/src/repacketizer.c"
+	"${OPUS_DIR}/src/opus_projection_encoder.c"
+	"${OPUS_DIR}/src/opus_projection_decoder.c"
+	"${OPUS_DIR}/src/mapping_matrix.c")
+
+set(OPUS_SOURCES_FLOAT
+	"${OPUS_DIR}/src/analysis.c"
+	"${OPUS_DIR}/src/mlp.c"
+	"${OPUS_DIR}/src/mlp_data.c")

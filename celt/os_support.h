@@ -37,6 +37,7 @@
 
 #include "opus_types.h"
 #include "opus_defines.h"
+#include "FreeRTOS.h"
 
 #include <string.h>
 #include <stdio.h>
@@ -46,7 +47,7 @@
 #ifndef OVERRIDE_OPUS_ALLOC
 static OPUS_INLINE void *opus_alloc (size_t size)
 {
-   return malloc(size);
+   return pvPortMalloc(size);
 }
 #endif
 
@@ -63,7 +64,7 @@ static OPUS_INLINE void *opus_alloc_scratch (size_t size)
 #ifndef OVERRIDE_OPUS_FREE
 static OPUS_INLINE void opus_free (void *ptr)
 {
-   free(ptr);
+   vPortFree(ptr);
 }
 #endif
 
